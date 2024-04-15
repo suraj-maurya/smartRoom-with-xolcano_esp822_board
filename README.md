@@ -31,7 +31,7 @@ Following steps ouline the overall steps to setup a project. You can read more a
 2. Replace `<CONNECTION-KEY>` with your connection key, which you can obtain from the node description.
 3. Set up your WiFi credentials by replacing `SSID` and `PASSWORD` with your WiFi network's SSID and password.
 
-### Usages
+## Usages
 
   #### Commands :
   > [!NOTE]
