@@ -23,7 +23,7 @@ Following steps ouline the overall steps to setup a project. You can read more a
 
 ## Hardware Set-Up
    - Connect LDR at A0 with voltage divider.
-   ![LDR-CONNECTION DIAGRAM](LDR-Connection%20Diagram.png)
+   ![LDR-CONNECTION DIAGRAM](/Circuit-diagram/LDR-Connection%20Diagram.png)
 
 ### Code Set-Up 
 
