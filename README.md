@@ -31,6 +31,14 @@ Following steps ouline the overall steps to setup a project. You can read more a
 2. Replace `<CONNECTION-KEY>` with your connection key, which you can obtain from the node description.
 3. Set up your WiFi credentials by replacing `SSID` and `PASSWORD` with your WiFi network's SSID and password.
 
+### Usages
+
+  #### Commands :
+  > [!NOTE]
+  > Keep 'The data is base64 encoded' **UNCHECK**
+
+  - **Fan :** Use `on/off ` command to turn on/off the Fan. (Command Name-`fan`, Command data-`on/off`) 
+  - **Bulb :** Use `on/off` command to trun on/ff the Bulb. (Command Name-`bulb`, Command data-`on/off`)
 
 ## Dependencies
 
