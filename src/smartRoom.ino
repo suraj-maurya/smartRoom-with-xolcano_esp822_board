@@ -223,16 +223,16 @@ void mqttCallback(char *topic, byte *payload, unsigned int length) {
     timeRes = str_res;
   } else if (Response["command"])  // block to get the command
   {
-    commandId = String(Response["id"]);
+    commandId = String(Response["commandId"]);
     String equipment = Response["command"].as<String>();
     String statusReceivedPayload = "{\"reqId\": \"\",\"commandId\": \"" + commandId + "\",\"status\": \"received\",\"ackdata\": \"\",\"ackdatatype\": \"\"}";
     mqtt_client.publish(statusTopic.c_str(), statusReceivedPayload.c_str());
     if (equipment == "fan" or equipment == "Fan") {
       fanStatus = String(Response["data"]);
-      fan_commandId = String(Response["id"]);
+      fan_commandId = String(Response["commandId"]);
     } else if (equipment == "bulb" or equipment == "Bulb") {
       bulbStatus = String(Response["data"]);
-      bulb_commandId = String(Response["id"]);
+      bulb_commandId = String(Response["commandId"]);
     }else{
           String statusReceivedPayload = "{\"reqId\": \"\",\"commandId\": \"" + commandId + "\",\"status\": \"failure\",\"ackdata\": \"\",\"ackdatatype\": \"\"}";
     mqtt_client.publish(statusTopic.c_str(), statusReceivedPayload.c_str());
